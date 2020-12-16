@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="510"
+	height="380"
+	viewBox="60 30 510 380">
+
+<title>Minima und Maxima</title>
+<defs>
+	<marker id="Arrow" refX="8" refY="5" markerUnits="userSpaceOnUse"
+			markerWidth="14" markerHeight="10" orient="auto">
+		<g transform="translate(7 5) scale(1.4)">
+			<path d="M -8 0 L -8 4 L 6 0 L -8 -4 z"/>
+		</g>
+	</marker>
+
+	<style type="text/css"><![CDATA[
+	.end    { text-anchor:end; }
+	.middle { text-anchor:middle; }
+	.scaling { stroke:none; fill:black; font-family:Bitstream Vera Sans; font-size:18.00; }
+	.curve {  fill:none; stroke:black; stroke-width:3.00; stroke-linecap:butt; stroke-linejoin:round; }
+	.max { fill:#b14; }
+	.min { fill:#08c; }
+	.label { stroke:none; font-family:Bitstream Vera Sans; font-size:26px; text-anchor:end; }
+	.axis  { fill:none; stroke:gray; stroke-width:1; stroke-linecap:butt; stroke-linejoin:miter; }
+	.arrow { fill:none; stroke: black; stroke-width:1.5; stroke-linecap:butt; marker-end:url(#Arrow); }
+	]]></style>
+</defs>
+
+<!-- Background -->
+<rect x="60" y="30" width="100%" height="100%" fill="white" fill-opacity="0.7"/>
+
+<!-- x-Axis -->
+<path class="axis" d="M63.9,225.6 L561.3,225.6"/>
+
+<!-- Labels and Arrows -->
+<text x="170" y="90"  class="label max" style="text-anchor:start">Máximo global</text>
+<path class="arrow" d="M166,75  L115,50 "/>
+
+<text x="228" y="376" class="label max" style="text-anchor:start">Mínimo global</text>
+<path class="arrow" d="M228,354 L193,330"/>
+
+<text x="345" y="140" class="label min" style="text-anchor:middle">Máximo local</text>
+<path class="arrow" d="M300,147 L324,171"/>
+<path class="arrow" d="M390,147 L513,236"/>
+
+<text x="400" y="310" class="label min" style="text-anchor:middle">Mínimo local</text>
+<path class="arrow" d="M432,287 L467,264"/>
+
+<!-- some Graph -->
+<path class="curve"	d="M105,46 C 118,160 140,324 187,324 S 270,180 330,180 S 412,257 475,257 C 492,257 520,242 520,242"/>
+
+</svg>
+<!-- Translated by SVGTranslate 2. If Unicode characters appear oddly, try to change the character being used by your viewer to UTF-8. -->
